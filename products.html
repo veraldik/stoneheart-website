@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="geo.region" content="US-MI">
+  <meta name="geo.placename" content="East Lansing">
+  <meta name="geo.position" content="42.734163;-84.4828162">
+  <meta name="StoneHeart" content="42.734163, -84.4828162">
+  <link href="icon-logo.ico?version=1" rel="shortcut icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>StoneHeart</title>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+  <img class="gpn-main-logo" src="images/logo.png" alt="StoneHeart Logo">
+  <div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="products.html" class="active">Products</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div>
+  <img class="front-picture" src="images/home-img.jpg" alt="StoneHeart Logo">
+</div>
+<header>Products</header>
+
+<section class="products">
+
+  <!-- It's likely you'll need to link the card somewhere. You could add a button in the info, link the titles, or even wrap the entire card in an <a href="..."> -->
+
+  <div class="product-card">
+    <div class="product-image">
+      <img src="images/table.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Rotating Table with Grill</h5>
+      <h6>$99.99</h6>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-image">
+      <img src="images/shield1.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Wood Stain - Dark</h5>
+      <h6>$99.99</h6>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-image">
+      <img src="images/marble.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Customized Marble Slab</h5>
+      <h6>$99.99</h6>
+    </div>
+  </div>
+  <div class="product-card">
+    <div class="product-image">
+      <img src="images/shield2.jpg">
+    </div>
+    <div class="product-info">
+      <h5>Wood Stain - Light</h5>
+      <h6>$99.99</h6>
+    </div>
+  </div>
+  <!-- more products -->
+
+</section>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
+  </body>
+</html>

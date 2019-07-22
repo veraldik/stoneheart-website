@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="geo.region" content="US-MI">
+  <meta name="geo.placename" content="East Lansing">
+  <meta name="geo.position" content="42.734163;-84.4828162">
+  <meta name="StoneHeart" content="42.734163, -84.4828162">
+  <link href="icon-logo.ico?version=1" rel="shortcut icon">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Playfair+Display" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>StoneHeart</title>
+</head>
+<body>
+  <img class="gpn-main-logo" src="images/logo.png" alt="StoneHeart Logo">
+  <div class="topnav" id="myTopnav">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="products.html">Products</a>
+  <a href="contact.html" class="active">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div>
+  <img class="front-picture" src="images/home-img.jpg" alt="StoneHeart Logo">
+</div>
+
+<header>Contact StoneHeart </header>
+<p>
+  Have an idea, question or want to report an issue? Fill out the contact form below and we'll reach out within 24 hours! 
+</p>
+
+<div id="form-messages"></div>
+
+<form id="ajax-contact" method="post" action="mailer.php">
+  <div class="field">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+  </div>
+
+  <div class="field">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="field">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+  </div>
+
+  <div class="field" id="wrapper">
+      <button type="submit">Send</button>
+  </div>
+</form>
+
+<footer>
+  StoneHeart &middot; 517 Evergreen Ave, East Lansing MI 48823 &middot; <a href="#contact">Contact</a> &middot; 
+  <br>
+  <a href="#privacy policy">Privacy Policy</a> &middot; &copy; Made by Kim Veraldi 2019
+</footer>
+
+<script>
+  function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script src="jquery-2.1.0.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
